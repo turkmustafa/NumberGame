@@ -12,6 +12,13 @@
 		0415040424CDFB6300FF1FAA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0415040324CDFB6300FF1FAA /* Assets.xcassets */; };
 		0415040A24CDFB6300FF1FAA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0415040824CDFB6300FF1FAA /* LaunchScreen.storyboard */; };
 		0415041224CDFF1D00FF1FAA /* GameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0415041124CDFF1D00FF1FAA /* GameController.swift */; };
+		0415041624CE019B00FF1FAA /* PredictionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0415041524CE019B00FF1FAA /* PredictionsView.swift */; };
+		0415041824CE028400FF1FAA /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0415041724CE028400FF1FAA /* UIView+.swift */; };
+		049A779B24CE0540001FD18F /* InputContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049A779A24CE0540001FD18F /* InputContainer.swift */; };
+		049A779D24CE0B16001FD18F /* NewGameButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049A779C24CE0B16001FD18F /* NewGameButton.swift */; };
+		049A779F24CE14DA001FD18F /* PredictionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049A779E24CE14DA001FD18F /* PredictionCell.swift */; };
+		049A77A124CE1FB5001FD18F /* Number.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049A77A024CE1FB5001FD18F /* Number.swift */; };
+		049A77A424CE4427001FD18F /* InputDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049A77A324CE4427001FD18F /* InputDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +29,13 @@
 		0415040924CDFB6300FF1FAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0415040B24CDFB6300FF1FAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0415041124CDFF1D00FF1FAA /* GameController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameController.swift; sourceTree = "<group>"; };
+		0415041524CE019B00FF1FAA /* PredictionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PredictionsView.swift; sourceTree = "<group>"; };
+		0415041724CE028400FF1FAA /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
+		049A779A24CE0540001FD18F /* InputContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputContainer.swift; sourceTree = "<group>"; };
+		049A779C24CE0B16001FD18F /* NewGameButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewGameButton.swift; sourceTree = "<group>"; };
+		049A779E24CE14DA001FD18F /* PredictionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PredictionCell.swift; sourceTree = "<group>"; };
+		049A77A024CE1FB5001FD18F /* Number.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Number.swift; sourceTree = "<group>"; };
+		049A77A324CE4427001FD18F /* InputDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,13 +69,60 @@
 			isa = PBXGroup;
 			children = (
 				041503FA24CDFB5F00FF1FAA /* AppDelegate.swift */,
-				0415041124CDFF1D00FF1FAA /* GameController.swift */,
+				049A77A524CE444D001FD18F /* Models */,
+				0415041424CE010000FF1FAA /* Views */,
+				0415041324CE00F500FF1FAA /* Controllers */,
+				0415041924CE028900FF1FAA /* Extensions */,
+				049A77A224CE440D001FD18F /* Protocols */,
 				0415040324CDFB6300FF1FAA /* Assets.xcassets */,
 				0415040824CDFB6300FF1FAA /* LaunchScreen.storyboard */,
 				0415040B24CDFB6300FF1FAA /* Info.plist */,
 				041503FE24CDFB5F00FF1FAA /* NumberGame.xcdatamodeld */,
 			);
 			path = NumberGame;
+			sourceTree = "<group>";
+		};
+		0415041324CE00F500FF1FAA /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				0415041124CDFF1D00FF1FAA /* GameController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		0415041424CE010000FF1FAA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				049A779C24CE0B16001FD18F /* NewGameButton.swift */,
+				049A779A24CE0540001FD18F /* InputContainer.swift */,
+				0415041524CE019B00FF1FAA /* PredictionsView.swift */,
+				049A779E24CE14DA001FD18F /* PredictionCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0415041924CE028900FF1FAA /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				0415041724CE028400FF1FAA /* UIView+.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		049A77A224CE440D001FD18F /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				049A77A324CE4427001FD18F /* InputDelegate.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		049A77A524CE444D001FD18F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				049A77A024CE1FB5001FD18F /* Number.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -134,9 +195,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				049A779F24CE14DA001FD18F /* PredictionCell.swift in Sources */,
 				041503FB24CDFB5F00FF1FAA /* AppDelegate.swift in Sources */,
+				049A77A124CE1FB5001FD18F /* Number.swift in Sources */,
+				0415041624CE019B00FF1FAA /* PredictionsView.swift in Sources */,
 				0415041224CDFF1D00FF1FAA /* GameController.swift in Sources */,
+				049A77A424CE4427001FD18F /* InputDelegate.swift in Sources */,
+				049A779B24CE0540001FD18F /* InputContainer.swift in Sources */,
 				0415040024CDFB5F00FF1FAA /* NumberGame.xcdatamodeld in Sources */,
+				049A779D24CE0B16001FD18F /* NewGameButton.swift in Sources */,
+				0415041824CE028400FF1FAA /* UIView+.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

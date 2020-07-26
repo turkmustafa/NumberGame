@@ -19,6 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         window = UIWindow(frame: UIScreen.main.bounds)
         let navigationController = UINavigationController(rootViewController: GameController())
+        navigationController.isNavigationBarHidden = true
         
         window?.rootViewController = navigationController
         window?.makeKeyAndVisible()
