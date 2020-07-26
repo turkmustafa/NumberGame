@@ -8,24 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		041503FB24CDFB5F00FF1FAA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041503FA24CDFB5F00FF1FAA /* AppDelegate.swift */; };
-		041503FD24CDFB5F00FF1FAA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041503FC24CDFB5F00FF1FAA /* SceneDelegate.swift */; };
 		0415040024CDFB5F00FF1FAA /* NumberGame.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 041503FE24CDFB5F00FF1FAA /* NumberGame.xcdatamodeld */; };
-		0415040224CDFB5F00FF1FAA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0415040124CDFB5F00FF1FAA /* ContentView.swift */; };
 		0415040424CDFB6300FF1FAA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0415040324CDFB6300FF1FAA /* Assets.xcassets */; };
-		0415040724CDFB6300FF1FAA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0415040624CDFB6300FF1FAA /* Preview Assets.xcassets */; };
 		0415040A24CDFB6300FF1FAA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0415040824CDFB6300FF1FAA /* LaunchScreen.storyboard */; };
+		0415041224CDFF1D00FF1FAA /* GameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0415041124CDFF1D00FF1FAA /* GameController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		041503F724CDFB5F00FF1FAA /* NumberGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NumberGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		041503FA24CDFB5F00FF1FAA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		041503FC24CDFB5F00FF1FAA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		041503FF24CDFB5F00FF1FAA /* NumberGame.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NumberGame.xcdatamodel; sourceTree = "<group>"; };
-		0415040124CDFB5F00FF1FAA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0415040324CDFB6300FF1FAA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		0415040624CDFB6300FF1FAA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0415040924CDFB6300FF1FAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0415040B24CDFB6300FF1FAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0415041124CDFF1D00FF1FAA /* GameController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,23 +55,13 @@
 			isa = PBXGroup;
 			children = (
 				041503FA24CDFB5F00FF1FAA /* AppDelegate.swift */,
-				041503FC24CDFB5F00FF1FAA /* SceneDelegate.swift */,
-				0415040124CDFB5F00FF1FAA /* ContentView.swift */,
+				0415041124CDFF1D00FF1FAA /* GameController.swift */,
 				0415040324CDFB6300FF1FAA /* Assets.xcassets */,
 				0415040824CDFB6300FF1FAA /* LaunchScreen.storyboard */,
 				0415040B24CDFB6300FF1FAA /* Info.plist */,
 				041503FE24CDFB5F00FF1FAA /* NumberGame.xcdatamodeld */,
-				0415040524CDFB6300FF1FAA /* Preview Content */,
 			);
 			path = NumberGame;
-			sourceTree = "<group>";
-		};
-		0415040524CDFB6300FF1FAA /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				0415040624CDFB6300FF1FAA /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +123,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				0415040A24CDFB6300FF1FAA /* LaunchScreen.storyboard in Resources */,
-				0415040724CDFB6300FF1FAA /* Preview Assets.xcassets in Resources */,
 				0415040424CDFB6300FF1FAA /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -150,8 +135,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				041503FB24CDFB5F00FF1FAA /* AppDelegate.swift in Sources */,
-				041503FD24CDFB5F00FF1FAA /* SceneDelegate.swift in Sources */,
-				0415040224CDFB5F00FF1FAA /* ContentView.swift in Sources */,
+				0415041224CDFF1D00FF1FAA /* GameController.swift in Sources */,
 				0415040024CDFB5F00FF1FAA /* NumberGame.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -289,7 +273,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"NumberGame/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = R3RCD74V3M;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = NumberGame/Info.plist;
@@ -309,7 +293,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"NumberGame/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = R3RCD74V3M;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = NumberGame/Info.plist;
